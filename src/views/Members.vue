@@ -2,90 +2,62 @@
   <div class="members">
     <h1 class="page-title">团队成员</h1>
 
-    <section style="margin-bottom: 50px;">
-      <h2 style="color: #667eea; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea;">
+    <section class="section">
+      <h2 class="section-title">
         🎓 导师团队
       </h2>
       <div class="grid">
         <div v-for="advisor in advisors" :key="advisor.id" class="card">
-          <div style="display: flex; gap: 20px; align-items: start;">
-            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                        border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-                        color: white; font-size: 2rem; flex-shrink: 0;">
+          <div class="card-content">
+            <div class="avatar avatar-large">
               {{ advisor.avatar }}
             </div>
-            <div style="flex: 1;">
-              <h3 style="color: #667eea; margin-bottom: 5px;">{{ advisor.name }}</h3>
-              <p style="color: #666; margin-bottom: 10px; font-weight: 500;">{{ advisor.title }}</p>
-              <p style="margin-bottom: 8px;"><strong>研究方向:</strong> {{ advisor.research }}</p>
-              <p style="margin-bottom: 8px;"><strong>邮箱:</strong> {{ advisor.email }}</p>
-              <p style="color: #666; line-height: 1.6;">{{ advisor.bio }}</p>
+            <div class="info">
+              <h3 class="name">{{ advisor.name }}</h3>
+              <p class="title">{{ advisor.title }}</p>
+              <p class="detail"><strong>研究方向:</strong> {{ advisor.research }}</p>
+              <p class="detail"><strong>邮箱:</strong> {{ advisor.email }}</p>
+              <p class="bio">{{ advisor.bio }}</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section style="margin-bottom: 50px;">
-      <h2 style="color: #667eea; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea;">
-        👨‍🔬 博士后研究员
-      </h2>
-      <div class="grid">
-        <div v-for="postdoc in postdocs" :key="postdoc.id" class="card">
-          <div style="display: flex; gap: 15px; align-items: start;">
-            <div style="width: 80px; height: 80px; background: #667eea; 
-                        border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-                        color: white; font-size: 1.8rem; flex-shrink: 0;">
-              {{ postdoc.avatar }}
-            </div>
-            <div style="flex: 1;">
-              <h3 style="color: #667eea;">{{ postdoc.name }}</h3>
-              <p style="margin-top: 5px;"><strong>研究方向:</strong> {{ postdoc.research }}</p>
-              <p style="margin-top: 5px;"><strong>邮箱:</strong> {{ postdoc.email }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section style="margin-bottom: 50px;">
-      <h2 style="color: #667eea; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea;">
+    <section class="section">
+      <h2 class="section-title">
         🎓 博士研究生
       </h2>
       <div class="grid">
-        <div v-for="phd in phdStudents" :key="phd.id" class="card">
-          <div style="display: flex; gap: 15px; align-items: start;">
-            <div style="width: 70px; height: 70px; background: #764ba2; 
-                        border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-                        color: white; font-size: 1.5rem; flex-shrink: 0;">
+        <div v-for="phd in phdStudents" :key="phd.id" class="card card-small">
+          <div class="card-content">
+            <div class="avatar avatar-small">
               {{ phd.avatar }}
             </div>
-            <div style="flex: 1;">
-              <h3 style="color: #667eea;">{{ phd.name }}</h3>
-              <p style="margin-top: 5px; color: #666;">{{ phd.year }} 级</p>
-              <p style="margin-top: 5px;"><strong>研究方向:</strong> {{ phd.research }}</p>
+            <div class="info">
+              <h3 class="name">{{ phd.name }}</h3>
+              <p class="year">{{ phd.year }} 级</p>
+              <p class="detail"><strong>研究方向:</strong> {{ phd.research }}</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2 style="color: #667eea; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea;">
+    <section class="section">
+      <h2 class="section-title">
         📚 硕士研究生
       </h2>
       <div class="grid">
-        <div v-for="master in masterStudents" :key="master.id" class="card">
-          <div style="display: flex; gap: 15px; align-items: start;">
-            <div style="width: 70px; height: 70px; background: #9f7aea; 
-                        border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-                        color: white; font-size: 1.5rem; flex-shrink: 0;">
+        <div v-for="master in masterStudents" :key="master.id" class="card card-small">
+          <div class="card-content">
+            <div class="avatar avatar-small">
               {{ master.avatar }}
             </div>
-            <div style="flex: 1;">
-              <h3 style="color: #667eea;">{{ master.name }}</h3>
-              <p style="margin-top: 5px; color: #666;">{{ master.year }} 级</p>
-              <p style="margin-top: 5px;"><strong>研究方向:</strong> {{ master.research }}</p>
+            <div class="info">
+              <h3 class="name">{{ master.name }}</h3>
+              <p class="year">{{ master.year }} 级</p>
+              <p class="detail"><strong>研究方向:</strong> {{ master.research }}</p>
             </div>
           </div>
         </div>
@@ -118,11 +90,6 @@ const advisors = ref([
   }
 ])
 
-const postdocs = ref([
-  { id: 1, name: '王博士', avatar: '👨‍💼', research: '自然语言处理', email: 'wang@university.edu' },
-  { id: 2, name: '刘博士', avatar: '👩‍💼', research: '强化学习', email: 'liu@university.edu' }
-])
-
 const phdStudents = ref([
   { id: 1, name: '陈同学', avatar: '👨', year: '2022', research: '图神经网络' },
   { id: 2, name: '赵同学', avatar: '👩', year: '2023', research: '联邦学习' },
@@ -138,5 +105,171 @@ const masterStudents = ref([
 </script>
 
 <style scoped>
-/* 组件特定的样式 */
+.members {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.page-title {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* 减少section间距 */
+.section {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  color: #667eea;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #667eea;
+  font-size: 1.3rem;
+}
+
+/* 紧凑的网格布局 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+/* 卡片样式 */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-small {
+  padding: 10px;
+}
+
+.card-content {
+  display: flex;
+  gap: 12px;
+  align-items: start;
+}
+
+/* 头像样式 */
+.avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.avatar-large {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 1.8rem;
+}
+
+.avatar-medium {
+  width: 60px;
+  height: 60px;
+  background: #667eea;
+  font-size: 1.5rem;
+}
+
+.avatar-small {
+  width: 50px;
+  height: 50px;
+  background: #764ba2;
+  font-size: 1.3rem;
+}
+
+/* 信息区域 */
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  color: #667eea;
+  margin: 0 0 3px 0;
+  font-size: 1.1rem;
+}
+
+.title {
+  color: #666;
+  margin: 0 0 6px 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.year {
+  color: #666;
+  margin: 0 0 6px 0;
+  font-size: 0.9rem;
+}
+
+.detail {
+  margin: 0 0 4px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.detail strong {
+  color: #333;
+}
+
+.bio {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin: 6px 0 0 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .members {
+    padding: 10px;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .avatar-large {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .avatar-medium {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  
+  .avatar-small {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
 </style>

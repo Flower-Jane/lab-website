@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    <!-- <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                              color: white; margin-bottom: 30px;">
       <div style="display: flex; justify-content: space-around; text-align: center; flex-wrap: wrap; gap: 20px;">
         <div>
@@ -41,7 +41,7 @@
           <div style="margin-top: 5px;">总引用数</div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div v-if="filteredPublications.length === 0" class="card" style="text-align: center; padding: 60px;">
       <p style="font-size: 1.2rem; color: #666;">暂无符合条件的论文</p>
@@ -76,10 +76,17 @@
             }">
               {{ pub.type === 'journal' ? '期刊论文' : '会议论文' }}
             </span>
-            <span v-if="pub.isTop" style="background: #f59e0b; color: white; 
-                                         padding: 5px 15px; border-radius: 20px; 
-                                         font-size: 0.85rem;">
-              ⭐ 顶级
+            <span v-if="pub.ccfLevel" 
+                  :style="{
+                    background: pub.ccfLevel === 'A' ? '#ef4444' : 
+                              pub.ccfLevel === 'B' ? '#f59e0b' : '#10b981',
+                    color: 'white',
+                    padding: '5px 15px',
+                    borderRadius: '20px',
+                    fontSize: '0.85rem'
+                  }">
+              {{ pub.ccfLevel === 'A' ? '⭐ CCF A' : 
+                pub.ccfLevel === 'B' ? '🔶 CCF B' : '🔷 CCF C' }}
             </span>
           </div>
         </div>
@@ -115,7 +122,7 @@ const publications = ref([
     venue: 'Nature Medicine',
     year: 2024,
     type: 'journal',
-    isTop: true,
+    ccfLevel: 'A',
     citations: 156,
     pdf: 'https://example.com/paper1.pdf',
     link: 'https://example.com/paper1'
@@ -127,7 +134,7 @@ const publications = ref([
     venue: 'NeurIPS 2024',
     year: 2024,
     type: 'conference',
-    isTop: true,
+    ccfLevel: 'B',
     citations: 89,
     pdf: 'https://example.com/paper2.pdf',
     link: 'https://example.com/paper2'
@@ -139,7 +146,7 @@ const publications = ref([
     venue: 'IEEE TPAMI',
     year: 2024,
     type: 'journal',
-    isTop: true,
+    ccfLevel: 'A',
     citations: 234,
     pdf: 'https://example.com/paper3.pdf',
     link: 'https://example.com/paper3'
@@ -151,7 +158,7 @@ const publications = ref([
     venue: 'CVPR 2024',
     year: 2024,
     type: 'conference',
-    isTop: true,
+    ccfLevel: 'C',
     citations: 178,
     pdf: 'https://example.com/paper4.pdf',
     link: 'https://example.com/paper4'
@@ -163,7 +170,7 @@ const publications = ref([
     venue: 'ACM TKDD',
     year: 2023,
     type: 'journal',
-    isTop: true,
+    ccfLevel: 'B',
     citations: 312,
     pdf: 'https://example.com/paper5.pdf',
     link: 'https://example.com/paper5'
@@ -175,7 +182,7 @@ const publications = ref([
     venue: 'ICRA 2023',
     year: 2023,
     type: 'conference',
-    isTop: true,
+    ccfLevel: 'A',
     citations: 267,
     pdf: 'https://example.com/paper6.pdf',
     link: 'https://example.com/paper6'
@@ -187,7 +194,7 @@ const publications = ref([
     venue: 'ACL 2023',
     year: 2023,
     type: 'conference',
-    isTop: true,
+    ccfLevel: 'B',
     citations: 145,
     pdf: 'https://example.com/paper7.pdf',
     link: 'https://example.com/paper7'
@@ -199,7 +206,7 @@ const publications = ref([
     venue: 'IEEE IoT Journal',
     year: 2023,
     type: 'journal',
-    isTop: false,
+    ccfLevel: 'C',
     citations: 98,
     pdf: 'https://example.com/paper8.pdf',
     link: 'https://example.com/paper8'
