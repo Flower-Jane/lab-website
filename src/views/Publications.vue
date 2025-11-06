@@ -96,7 +96,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2025,
     ccfLevel: 'B',
-    link: 'https://example.com/paper2' // 沿用你示例中的链接
+    link: 'https://openreview.net/forum?id=5BqDSw8r5j' // 沿用你示例中的链接
   },
   {
     id: 3,
@@ -132,7 +132,7 @@ const publications = ref([
     venue: 'ECAI',
     year: 2025,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://www.researchgate.net/publication/396787419_Paeformer_Patch-Wise_Representation_Learning_with_Autoencoder_for_Multivariate_Time_Series_Forecasting'
   },
   {
     id: 7,
@@ -294,7 +294,7 @@ const publications = ref([
     venue: 'NeurIPS',
     year: 2024,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://arxiv.org/abs/2311.06423'
   },
   {
     id: 25,
@@ -303,7 +303,7 @@ const publications = ref([
     venue: 'EMNLP Findings',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2409.15868v3'
   },
   {
     id: 26,
@@ -312,7 +312,7 @@ const publications = ref([
     venue: 'Neurocomputing(SCI)',
     year: 2024,
     ccfLevel: null,
-    link: '#'
+    link: 'https://www.sciencedirect.com/science/article/abs/pii/S0925231223011566'
   },
   {
     id: 27,
@@ -321,7 +321,7 @@ const publications = ref([
     venue: 'ICPADS',
     year: 2024,
     ccfLevel: null,
-    link: '#'
+    link: 'https://arxiv.org/abs/2409.00116'
   },
   {
     id: 28,
@@ -330,7 +330,7 @@ const publications = ref([
     venue: 'BIBM',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://www.computer.org/csdl/proceedings-article/bibm/2024/10822730/23oodSdqIbC'
   },
   {
     id: 29,
@@ -339,7 +339,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3627673.3679640'
   },
   {
     id: 30,
@@ -348,7 +348,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3627673.3679639'
   },
   {
     id: 31,
@@ -357,7 +357,7 @@ const publications = ref([
     venue: 'ACL',
     year: 2024,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://arxiv.org/abs/2309.05534'
   },
   {
     id: 32,
@@ -366,7 +366,7 @@ const publications = ref([
     venue: 'ECML PKDD',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1007/978-3-031-70381-2_21'
   },
   {
     id: 33,
@@ -375,7 +375,7 @@ const publications = ref([
     venue: 'KDD',
     year: 2024,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://arxiv.org/abs/2406.07953'
   },
   {
     id: 34,
@@ -384,7 +384,7 @@ const publications = ref([
     venue: 'UAI',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://openreview.net/forum?id=FFsbpo2fwF'
   },
   {
     id: 35,
@@ -393,7 +393,7 @@ const publications = ref([
     venue: 'IJCAI',
     year: 2024,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://arxiv.org/abs/2401.16224'
   },
   {
     id: 36,
@@ -402,7 +402,7 @@ const publications = ref([
     venue: 'COLING',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://aclanthology.org/2024.lrec-main.1351/'
   },
   {
     id: 37,
@@ -411,7 +411,7 @@ const publications = ref([
     venue: 'TKDD(SCI I区)',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2307.15971'
   },
   {
     id: 38,
@@ -420,7 +420,7 @@ const publications = ref([
     venue: 'SDM',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2309.12424'
   },
   {
     id: 39,
@@ -429,7 +429,7 @@ const publications = ref([
     venue: 'SDM',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2307.15994'
   },
   {
     id: 40,
@@ -438,7 +438,7 @@ const publications = ref([
     venue: 'WSDM',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3616855.3635758'
   },
   {
     id: 41,
@@ -447,7 +447,7 @@ const publications = ref([
     venue: 'Frontiers of Computer Science',
     year: 2024,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://openreview.net/forum?id=qTfr01HvpX'
   },
   // --- 2023 年论文 (16 篇) ---
   {
@@ -457,7 +457,7 @@ const publications = ref([
     venue: 'IEEE Internet of Things Journal (SCI I区)',
     year: 2023,
     ccfLevel: null,
-    link: '#'
+    link: 'https://ieeexplore.ieee.org/document/10286024/'
   },
   {
     id: 43,
@@ -466,7 +466,7 @@ const publications = ref([
     venue: 'EMNLP',
     year: 2023,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2311.06761'
   },
   {
     id: 44,
@@ -475,7 +475,7 @@ const publications = ref([
     venue: 'Findings of EMNLP',
     year: 2023,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2212.10013'
   },
   {
     id: 45,
@@ -484,7 +484,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2023,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2305.14677'
   },
   {
     id: 46,
@@ -493,7 +493,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2023,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2309.09486?context=cs'
   },
   {
     id: 47,
@@ -502,7 +502,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2023,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3583780.3615219'
   },
   {
     id: 48,
@@ -511,7 +511,7 @@ const publications = ref([
     venue: 'ECAI',
     year: 2023,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2307.07916'
   },
   {
     id: 49,
@@ -520,7 +520,7 @@ const publications = ref([
     venue: 'FL-IJCAI',
     year: 2023,
     ccfLevel: null,
-    link: '#'
+    link: 'https://arxiv.org/abs/2304.01502'
   },
   {
     id: 50,
@@ -529,7 +529,7 @@ const publications = ref([
     venue: 'ACL',
     year: 2023,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://aclanthology.org/2023.acl-industry.28/'
   },
   {
     id: 51,
@@ -538,7 +538,7 @@ const publications = ref([
     venue: 'Findings of ACL',
     year: 2023,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://arxiv.org/abs/2207.01193'
   },
   {
     id: 52,
@@ -547,7 +547,7 @@ const publications = ref([
     venue: 'Findings of ACL',
     year: 2023,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://aclanthology.org/2023.findings-acl.397/'
   },
   {
     id: 53,
@@ -556,7 +556,7 @@ const publications = ref([
     venue: 'KSME',
     year: 2023,
     ccfLevel: null,
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1007/978-3-031-40289-0_9'
   },
   {
     id: 54,
@@ -565,7 +565,7 @@ const publications = ref([
     venue: 'Multimedia Systems (SCI)',
     year: 2023,
     ccfLevel: null,
-    link: '#'
+    link: 'https://dl.acm.org/doi/abs/10.1007/s00530-023-01065-2'
   },
   {
     id: 55,
@@ -574,7 +574,7 @@ const publications = ref([
     venue: 'WWW',
     year: 2023,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3543507.3583365'
   },
   {
     id: 56,
@@ -583,7 +583,7 @@ const publications = ref([
     venue: 'DASFAA',
     year: 2023,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1007/978-3-031-30637-2_45'
   },
   {
     id: 57,
@@ -592,7 +592,7 @@ const publications = ref([
     venue: 'IEEE WCNC',
     year: 2023,
     ccfLevel: null,
-    link: '#'
+    link: 'https://ieeexplore.ieee.org/document/10118879'
   },
 
   // --- 2022 年论文 (11 篇) ---
@@ -603,7 +603,7 @@ const publications = ref([
     venue: 'NAACL',
     year: 2022,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2005.06377'
   },
   {
     id: 59,
@@ -612,7 +612,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2022,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3511808.3557412'
   },
   {
     id: 60,
@@ -621,7 +621,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2022,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3511808.3557378'
   },
   {
     id: 61,
@@ -630,7 +630,7 @@ const publications = ref([
     venue: 'Transactions on Big Data (SCI)',
     year: 2022,
     ccfLevel: null,
-    link: '#'
+    link: 'https://ieeexplore.ieee.org/document/9797864'
   },
   {
     id: 62,
@@ -639,7 +639,7 @@ const publications = ref([
     venue: 'SIGIR',
     year: 2202,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://arxiv.org/abs/2205.13730'
   },
   {
     id: 63,
@@ -648,7 +648,7 @@ const publications = ref([
     venue: 'ICASSP',
     year: 2022,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://ieeexplore.ieee.org/document/9746138'
   },
   {
     id: 64,
@@ -657,7 +657,7 @@ const publications = ref([
     venue: 'DASFAA',
     year: 2022,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/abs/10.1007/978-3-031-00129-1_25'
   },
   {
     id: 65,
@@ -666,7 +666,7 @@ const publications = ref([
     venue: 'DASFAA',
     year: 2022,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1007/978-3-031-00129-1_39'
   },
   {
     id: 66,
@@ -675,16 +675,16 @@ const publications = ref([
     venue: 'IEEE Internet of Things Journal (SCI I区)',
     year: 2022,
     ccfLevel: null,
-    link: '#'
+    link: 'https://ieeexplore.ieee.org/document/9663531'
   },
   {
     id: 67,
     title: 'Backdoor Defense with Machine Unlearning',
     authors: 'Yang Liu, Mingyuan Fan, Cen Chen, Ximeng Liu, Zhuo Ma, Li Wang, and Jianfeng Ma',
-    venue: 'INFOCOM',
+    venue: 'INFOCOM',   
     year: 2022,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://arxiv.org/abs/2201.09538'
   },
   {
     id: 68,
@@ -693,7 +693,7 @@ const publications = ref([
     venue: 'ACM TIST',
     year: 2022,
     ccfLevel: null,
-    link: '#'
+    link: 'https://arxiv.org/abs/2012.09364'
   },
   // --- 2021 年论文 (7 篇) ---
   {
@@ -703,7 +703,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2021,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3459637.3481932'
   },
   {
     id: 70,
@@ -712,7 +712,7 @@ const publications = ref([
     venue: 'CIKM',
     year: 2021,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://arxiv.org/abs/2011.09463'
   },
   {
     id: 71,
@@ -730,7 +730,7 @@ const publications = ref([
     venue: 'WWW',
     year: 2021,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://dl.acm.org/doi/10.1145/3442381.3449814'
   },
   {
     id: 73,
@@ -739,7 +739,7 @@ const publications = ref([
     venue: 'ICASSP',
     year: 2021,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://ieeexplore.ieee.org/document/9414807/'
   },
   {
     id: 74,
@@ -748,7 +748,7 @@ const publications = ref([
     venue: 'AAAI',
     year: 2021,
     ccfLevel: 'A',
-    link: '#'
+    link: 'https://ojs.aaai.org/index.php/AAAI/article/view/17617'
   },
   {
     id: 75,
@@ -757,7 +757,7 @@ const publications = ref([
     venue: 'DASFAA',
     year: 2021,
     ccfLevel: 'B',
-    link: '#'
+    link: 'https://dl.acm.org/doi/abs/10.1007/978-3-030-73197-7_10'
   }
 
 ])
