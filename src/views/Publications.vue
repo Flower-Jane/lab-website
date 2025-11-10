@@ -637,7 +637,7 @@ const publications = ref([
     title: 'Understanding Long Programming Languages with Structure-Aware Sparse Attention',
     authors: 'Tingting Liu, Chengyu Wang, Cen Chen*, Ming Gao, and Aoying Zhou',
     venue: 'SIGIR',
-    year: 2202,
+    year: 2022,
     ccfLevel: 'A',
     link: 'https://arxiv.org/abs/2205.13730'
   },
@@ -932,12 +932,12 @@ function nextPage() {
   padding: 20px;
   margin-bottom: 20px;
 }
-.page-title {
+/* .page-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
-}
+} */
 
 /* 筛选下拉框的简单样式 */
 select {

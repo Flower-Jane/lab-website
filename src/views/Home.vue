@@ -2,9 +2,9 @@
   <div class="home">
     <section class="hero">
       <h1 class="page-title">欢迎来到我们的实验室</h1>
-      <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 40px;">
+      <!-- <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 40px;">
         致力于前沿科学研究，培养优秀人才
-      </p>
+      </p> -->
     </section>
 
     <!-- 实验室成员合照轮播展示 - 移到最前面 -->

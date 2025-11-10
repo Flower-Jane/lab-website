@@ -141,11 +141,11 @@ const masterStudents = ref([
   padding: 15px;
 }
 /* ... 粘贴你原来的所有 style 内容 ... */
-.page-title {
+/* .page-title {
   color: #667eea;
   margin-bottom: 20px;
   font-size: 1.8rem;
-}
+} */
 .section {
   margin-bottom: 25px;
 }
