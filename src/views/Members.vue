@@ -4,7 +4,7 @@
 
     <section class="section">
       <h2 class="section-title">🎓 导师团队</h2>
-      <div class="grid">
+      <div class="grid grid-full">
         <div v-for="advisor in advisors" :key="advisor.id" class="card">
           <div class="card-content">
             <div class="avatar avatar-large">
@@ -18,8 +18,16 @@
             <div class="info">
               <h3 class="name">{{ advisor.name }}</h3>
               <p class="title">{{ advisor.title }}</p>
-              <p class="detail"><strong>研究方向:</strong> {{ advisor.research }}</p>
-              <p class="detail"><strong>邮箱:</strong> {{ advisor.email }}</p>
+              <!-- <p class="detail"><strong>研究方向:</strong> {{ advisor.research }}</p> -->
+              <p class="detail"><strong>个人邮箱: </strong> {{ advisor.email }}</p>
+              <p class="detail">
+                <strong>个人主页: </strong> 
+                <a :href="advisor.web" target="_blank" class="plain-link">{{ advisor.web }}</a>
+              </p>
+              <p class="detail">
+                <strong>学术主页: </strong> 
+                <a :href="advisor.scholar" target="_blank" class="plain-link">{{ advisor.scholar }}</a>
+              </p>
               <p class="bio">{{ advisor.bio }}</p>
             </div>
           </div>
@@ -98,7 +106,9 @@ const advisors = ref([
     avatar: '../assets/avatars/cc.png', // <-- 修改
     research: '数据挖掘、隐私保护机器学习、NLP应用等',
     email: ' cenchen@dase.ecnu.edu.cn',
-    bio: '华东师范大学数据科学与工程学院副教授、博士生导师；新加坡管理大学博士学位。研究专注于可信大语言模型、隐私与AI安全等领域，发表论文100余篇，申请40余项专利'
+    web: 'https://sites.google.com/site/chencenpersonalwebsite/',
+    scholar: 'https://scholar.google.com.sg/citations?hl=en&user=3Mn4S9UAAAAJ',
+    bio: '研究专注于可信大型语言模型（LLMs）、隐私与人工智能安全以及生成式人工智能（AIGC）等领域，发表论文100余篇，申请40余项专利，主持多项科研项目，并与阿里巴巴、蚂蚁集团、滴滴、字节跳动等企业建立了合作关系。'
   }
 ])
 
@@ -135,6 +145,17 @@ const masterStudents = ref([
 
 <style scoped>
 /* 你的所有样式都保持不变，它们是正确的 */
+/* 控制链接样式，使其颜色与周围文本一致 */
+.plain-link {
+  color: inherit; /* 继承父元素的文字颜色 */
+  text-decoration: none; /* 去除下划线（可选，根据需求保留或删除） */
+}
+
+/* 鼠标悬停时也保持颜色不变（可选） */
+.plain-link:hover {
+  color: inherit;
+  text-decoration: none; /* 悬停时也无下划线 */
+}
 .members {
   max-width: 1200px;
   margin: 0 auto;
@@ -161,6 +182,9 @@ const masterStudents = ref([
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 12px;
 }
+.grid-full {
+     grid-template-columns: 1fr;
+   }
 .card {
   background: white;
   border-radius: 8px;
